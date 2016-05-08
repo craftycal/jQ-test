@@ -1,0 +1,46 @@
+html {
+	font-family: 'Josefin Slab', serif;
+}
+
+body {
+	position: relative;
+	height: 2000px;
+}
+
+#clickMe{
+	width: 350px;
+	position: absolute;
+	left: 10px;
+	text-align: center;
+	z-index: 2;
+}
+
+#clickMe:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#click {
+	width: 350px;
+	position: relative;
+}
+
+#green,
+#orange {
+	position: absolute;
+	left: 8px;
+	top: 8px;	
+}
+
+
+
+#up {
+	position: absolute;
+	bottom: 0;
+}
+
+#up:hover {
+	cursor: pointer;
+	text-decoration: underline;	
+}
+
