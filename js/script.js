@@ -2,15 +2,14 @@
 $(document).ready(function(){
 
 
-	$( "#clickMe" ).click(function() {
-		$("#orange").fadeToggle("slow");
+	$(".control").click(function(){
+		$(this).next(".box").slideToggle({"display" : "block"});
 	});
 
-	$( "#up" ).click(function() {
-		$("html, body").animate({ scrollTop: 0 }, 'slow');
-	});
+	$("#loginclick").click(function(){
+		$("#login").slideToggle({"display" : "block"});
+	});	
 
-
-});
+});//document
 
 

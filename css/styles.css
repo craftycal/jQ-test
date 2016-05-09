@@ -1,46 +1,145 @@
 html {
 	font-family: 'Josefin Slab', serif;
+	background-image: url("../img/tumblr_lr5z8wwdWC1r0j2yvo1_1280.jpg");
+
 }
 
 body {
+	width: 1200px;
+	margin: 40px auto;
+	border-top: 3px solid #888888;
+	border-left: 3px solid #888888;
+	border-right: 3px solid #888888;
 	position: relative;
-	height: 2000px;
+	top: 0;
+	min-height: 700px 
 }
 
-#clickMe{
-	width: 350px;
-	position: absolute;
-	left: 10px;
-	text-align: center;
-	z-index: 2;
+nav {
+	background-color: #888888;
 }
 
-#clickMe:hover {
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	margin-left: 30px;
+	display: inline;
+}
+
+nav li span {
+	margin: 6px;
+	float: right;
+}
+
+nav li span:hover {
 	cursor: pointer;
+	color: #f9f9f9;
+}
+
+nav li a {
+	color: #f9f9f9;
+	line-height: 30px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+nav li a:hover {
 	text-decoration: underline;
 }
 
-#click {
-	width: 350px;
-	position: relative;
+#acord {
+	width: 800px;
+	margin-left: 80px;
+	display: inline-block;
 }
 
-#green,
-#orange {
+#acord h1 {
+	background-color: #555555;
+	line-height: 50px;
+	margin: 0;
+	padding: 5px;
+}
+
+#acord h2 {
+	background-color: #888888;
+	line-height: 50px;
+	margin: 0;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.box {
+	background-color: #f9f9f9;
+	height: 100px;
+	padding: 10px;
+	margin: 0;
+	display: none;
+}
+
+#login {
 	position: absolute;
-	left: 8px;
-	top: 8px;	
+	top: 45px;
+	right: 0;
+	padding: 20px;
+	width: 160px;
+	height: 120px;
+	background-color: #FF3F28;
+	display: none;
+	border-top: 1px dashed #999999; 
+}
+
+#login span {
+	display: block;
+}
+
+#sidebar {
+	width: 240px;
+	float: right;
+	margin-right: 20px;
+	padding: 10px;
+	border: 2px solid #666666;
+	clear: right;
 }
 
 
 
-#up {
-	position: absolute;
-	bottom: 0;
-}
 
-#up:hover {
-	cursor: pointer;
-	text-decoration: underline;	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
