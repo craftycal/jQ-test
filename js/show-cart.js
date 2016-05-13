@@ -1,6 +1,3 @@
-// localStorage.setItem("cart", JSON.stringify( [] ));
-
-// if shopping cart does not exist in local storage
 if( localStorage.getItem("cart") == null) {
 
 	//create cart
@@ -10,69 +7,10 @@ if( localStorage.getItem("cart") == null) {
 // extract cart and convert back to object
 var cart = JSON.parse( localStorage.getItem("cart") );
 
-//show contents of the cart
-console.log( cart );
-
-// show the number of items in the cart
 updateCartDisplay();
 
 
-var addToCartButton =document.querySelectorAll(".add-to-cart");
-
-// add click event 
-for(var i=0; i<addToCartButton.length; i++) {
-
-	addToCartButton[i].onclick = addToCart;
-}
-
-
-function addToCart(){
-	var productName = this.dataset.name;
-	var productPrice = parseFloat(this.dataset.price);
-
-	var product = {
-		name: productName,
-		price: productPrice
-	}	
-
-	cart.push(product);
-
-	localStorage.setItem("cart", JSON.stringify(cart));
-
-	console.log(cart);
-
-	updateCartDisplay();
-}
-
-
-// listen for clicks on clear cart button
-document.querySelector("#clear-cart").onclick = function(){
-
-	localStorage.setItem("cart", JSON.stringify( [] ));
-
-	cart = [];
-
-	updateCartDisplay();
-};
-
-function updateCartDisplay(){
-	// get cart contents
-	var cart = JSON.parse( localStorage.getItem('cart') );
-
-	//if total is 0
-	if (cart.length == 0 ) {
-	var text = '';
-	} else {
-		var text = cart.length;
-	}
-
-	//count cart contents & display number on screen
-	document.querySelector("#total-cart").innerHTML = cart.length;
-
-	showCartTable();
-}
-
-function showCartTable(){
+function updateCartDisplay() {
 	//
 	var container = document.querySelector("#cart-table");
 	//
@@ -138,22 +76,11 @@ function showCartTable(){
 
 }
 
+document.querySelector("#clear-cart").onclick = function(){
 
+	localStorage.setItem("cart", JSON.stringify( [] ));
 
+	cart = [];
 
-
-// JQ - acordian and login
-$(document).ready(function(){
-
-
-	$(".control").click(function(){
-		$(this).next(".box").slideToggle({"display" : "block"});
-	});
-
-	$("#loginclick").click(function(){
-		$("#login").slideToggle({"display" : "block"});
-	});	
-
-});//document
-
-
+	updateCartDisplay();
+};

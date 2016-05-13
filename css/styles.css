@@ -1,6 +1,6 @@
 html {
 	font-family: 'Josefin Slab', serif;
-	background-image: url("../img/tumblr_lr5z8wwdWC1r0j2yvo1_1280.jpg");
+	background-image: url("../img/95757ac5.png");
 
 }
 
@@ -85,7 +85,7 @@ nav li a:hover {
 	padding: 20px;
 	width: 160px;
 	height: 120px;
-	background-color: #FF3F28;
+	background-color: #888888;
 	display: none;
 	border-top: 1px dashed #999999; 
 }
@@ -97,14 +97,105 @@ nav li a:hover {
 #sidebar {
 	width: 240px;
 	float: right;
-	margin-right: 20px;
+	margin-right: 40px;
+	margin-top: 10px;
 	padding: 10px;
 	border: 2px solid #666666;
 	clear: right;
 }
 
+#catalogue {
+	width: 800px;
+	display: inline-block;
+	margin-left: 80px;
+}
 
+article {
+	width: 350px;
+	height: 200px;
+	border: 2px solid #666666; 
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
 
+article h1 {
+	background-color: #555555;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.item-details {
+	width: 200px;
+	float: right;
+	display: inline-block;
+	margin: 0;
+}
+
+.item-details p {
+	margin: 0;
+}
+
+.item-details button{
+	margin-top: 10px;
+}
+
+#total-cart {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	width: 20px;
+	text-align: center;
+	line-height: 20px;
+	position: relative;
+	top: -2px;
+	right: 45px;
+}
+
+#table {
+	position: relative;
+	width: 800px;
+	min-height: 400px;
+	display: inline-block;
+	margin-left: 80px;
+	border: 2px solid #666666
+}
+
+#payment {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#clear-cart {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#clear-cart:hover {
+	text-decoration: underline;
+	cursor: pointer;	
+}
+#payment:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#cart-link {
+	float: right;
+	color: black;
+}
+
+#cart-link:hover {
+	color: white;
+}
 
 
 

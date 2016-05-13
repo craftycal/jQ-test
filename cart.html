@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>home</title>
+		<meta name="description" content="between 150 / 160 characters" >
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><span id="loginclick">Login</span></li>
+			<li><a id="cart-link" href="cart.html"><span id="total-cart"></span><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+		</ul>
+	</nav>
+
+	<div id="login">
+			<form>
+				<span>Username</span>
+				<input type="text" name="UserName"><br>
+				<span>Password</span>
+				<input type="text" name="Password"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+	</div>
+
+
+
+	<div id="table">
+		<h1>Cart</h1>
+				<div id="cart-table"></div>
+			<button id="clear-cart"><i class="fa fa-trash" aria-hidden="true"></i> Clear Cart</button>
+			<button id="payment">Payment <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!-- <script src="js/script.js"></script> -->
+		<script src="js/login.js"></script>
+		<script src="js/show-cart.js"></script>
+	</body>
+</html>
